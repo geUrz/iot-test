@@ -1,0 +1,23 @@
+extends ../layout/index
+
+block contenido
+    a(href="/auth/login") 
+        i.fa-solid.fa-arrow-left
+    div.sec1
+        div.sec1_box
+            h2=pagina
+
+            if errores 
+                div.box_errores
+                    each error in errores
+                        p.p_errores= error.msg
+
+            p Ingresa tu correo y enviaremos un enlace para restablecer tu contraseña
+            form(method="POST" action="/auth/restablecerPass" noValidate)
+                input(type="hidden" name="_csrf" value= csrfToken)
+                label#label Correo*
+                input#input(for="correo" type="email" name="email" placeholder="Ingresa tu correo")
+                input#btn_input(type="submit" value="Enviar")
+                
+
+    

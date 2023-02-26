@@ -1,0 +1,25 @@
+extends ../layout/index
+
+block contenido
+
+    div.sec1
+        div.sec1_box
+            h2=pagina
+
+            if errores 
+                div.box_errores
+                    each error in errores
+                        p.p_errores= error.msg
+
+            form(method="POST" action="/auth/login")
+                input(type="hidden" name="_csrf" value=csrfToken)
+                label#label Nombre*
+                input#input(for="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre")
+                label#label Contraseña*
+                input#input(for="contraseña" type="password" name="password" placeholder="Ingresa tu contraseña")
+                input#btn_input(type="submit" value="Entrar")
+            div.crearCuenta 
+                a.a(href="/auth/registro") Crear cuenta
+                a.a(href="/auth/restablecerPass") Restablecer contraseña  
+
+    

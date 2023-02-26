@@ -1,0 +1,23 @@
+extends ../layout/index
+
+block contenido
+    a(href="/auth/login") 
+        i.fa-solid.fa-arrow-left
+    div.sec1
+        div.sec1_box
+            h2=pagina
+
+            if errores 
+                div.box_errores
+                    each error in errores
+                        p.p_errores= error.msg
+
+            p Ingresa tu nueva contraseña
+            form(method="POST" noValidate)
+                input(type="hidden" name="_csrf" value= csrfToken)
+                label#label Nueva contraseña*
+                input#input(for="contraseña" type="password" name="password" placeholder="Ingresa tu nueva contraseña")
+                input#btn_input(type="submit" value="Guardar contraseña")
+                
+
+    

@@ -1,0 +1,10 @@
+extends ../layout/index
+
+block contenido
+    div.sec1
+        div.sec1_box
+            h2(class= error ? "usuarioFalse" : "usuarioTrue")=pagina
+            p=mensaje
+
+            if !error
+                a.confirmarCuenta(href="/auth/login") Iniciar sesion

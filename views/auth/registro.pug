@@ -1,0 +1,28 @@
+extends ../layout/index
+
+block contenido
+    a(href="/auth/login") 
+        i.fa-solid.fa-arrow-left
+    div.sec1
+        div.sec1_box
+            h2=pagina
+            
+            if errores 
+                div.box_errores
+                    each error in errores
+                        p.p_errores= error.msg
+
+            form(method="POST" action="/auth/registro" noValidate)
+                input(type="hidden" name="_csrf" value= csrfToken)
+                label#label Nombre*
+                input#input(for="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" value= usuario ? usuario.nombre : "")
+                label#label Correo*
+                input#input(for="correo" type="email" name="email" placeholder="Ingresa tu correo" value= usuario ? usuario.email : "")
+                label#label Contraseña*
+                input#input(for="contraseña" type="password" name="password" placeholder="Ingresa tu contraseña")
+                label#label Confirmar contraseña*
+                input#input(for="confirmar_password" type="password" name="confirmar_password" placeholder="Confirma tu contraseña")
+                input#btn_input(type="submit" value="Crear cuenta")
+                
+
+    

@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Roboto_H2';
+    src: url('../font/Roboto/Roboto-Thin.ttf');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Roboto_H3';
+    src: url('../font/Roboto/Roboto-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+:root{
+    --gray : rgb(216, 216, 216);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto_H3';
+}
+
+h2{
+    font-family: 'Roboto_H2';
+    color: rgb(42, 141, 255);
+    font-weight: 500;
+
+}
+
+p{
+    color: rgb(0, 90, 192);
+    font-weight: 400;
+
+}
+
+h3{
+    font-family: 'Roboto_H3';
+    font-weight: 500;
+
+}
+
+body{
+    background-color: rgba(0, 0, 0, .92);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sec1{
+    padding: 10px;
+    width: 280px;
+    height: 380px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-arrow-left, .fa-home{
+    top: 30px;
+    left: 30px;
+    font-size: 25px;
+    color: azure;
+    text-align: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+.fa-home{
+    font-size: 22.5px;
+}
+
+.fa-arrow-left:hover, .fa-home:hover{
+    color: rgb(0, 90, 192);
+}
+
+.sec1_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.sec1_box h2{
+    font-size: 18px;
+}
+
+.sec1_box p{
+    margin-top: 12.5px;
+    color: var(--gray);
+    font-size: 12.5px;
+    text-align: center;
+}
+
+.usuarioFalse{
+    color: red;
+}
+
+.usuarioTrue{
+    color: green;
+}
+
+form{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+#input{
+    width: 75%;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+}
+
+#label{
+    padding: 2px;
+    width: 78.5%;
+    color: azure;
+    margin-top: 12px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#btn_input{
+    width: 80%;
+    padding: 8px;
+    margin-top: 25px;
+    color: var(--gray);
+    font-size: 16px;
+    background-color: rgb(0, 90, 192);
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btn_input:hover{
+    background-color: rgb(0, 72, 155);
+}
+
+.crearCuenta{
+    width: 80%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crearCuenta .a{
+    color: azure;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.confirmarCuenta{
+    color: rgb(0, 90, 192);
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.a:hover{
+    color: rgb(0, 72, 155);
+}
