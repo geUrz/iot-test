@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node ./index.js",
+    "server": "nodemon ./index.js",
     "css": "postcss public/css/tailwind.css -o public/css/app.css --wath"
   },
   "author": "",

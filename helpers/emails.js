@@ -15,7 +15,7 @@ const emailRegistro = async (datos) => {
     const {email, nombre, token} = datos
 
     await transport.sendMail({
-        from: "Node Prueba",
+        from: "IoT Test",
         to: email,
         subject: "Activar cuenta",
         text: "Activar tu cuenta",
