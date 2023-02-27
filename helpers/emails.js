@@ -21,7 +21,7 @@ const emailRegistro = async (datos) => {
         text: "Activar tu cuenta",
         html: 
             `<p>Hola ${nombre} comprueba tu cuenta de IoT en el siguiente enlace:</p>
-            <p><a href="${process.env.BACKEND_URL}:${process.env.PORT ?? 3000}/auth/confirmar/${token}">Activar cuenta</a></p>`
+            <p><a href="${process.env.BACKEND_URL}:${process.env.PORT || 3000}/auth/confirmar/${token}">Activar cuenta</a></p>`
     })
 }
 
