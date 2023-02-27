@@ -1,0 +1,14 @@
+extends ./layout/index
+
+block contenido
+
+    div.sec1
+        div.sec1_box.secInicio_box
+            img(src="./img/logo.png").logo
+            div.btnInicio
+                a(href="/auth/login")
+                    div.btnIniciarSesion
+                        h3 Iniciar sesion 
+                a(href="/auth/registro")
+                    div.btnCrearCuenta
+                        h3 Crear cuenta

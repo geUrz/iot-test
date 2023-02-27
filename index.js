@@ -3,6 +3,7 @@ import csurf from "csurf"
 import cookieParser from "cookie-parser"
 import usuarioRoutes from "./routes/usuarioRoutes.js"
 import pagesRoutes from "./routes/pagesRoutes.js"
+import appRoutes from "./routes/appRoutes.js"
 import db from "./config/db.js"
 const app = express()
 
@@ -24,6 +25,7 @@ try{
     console.log("Error al conectar a base de datos")
 }
 
+app.use("/", appRoutes)
 app.use("/auth", usuarioRoutes)
 app.use("/", pagesRoutes)
 
