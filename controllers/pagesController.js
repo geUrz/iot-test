@@ -17,7 +17,7 @@ const home = (req, res) => {
 const ac = (req, res) => {
 
     res.render("pages/ac", {
-        pagina: "A/C"
+        pagina: "A/C",
     })
 
 }

@@ -5,19 +5,27 @@ html(lang="es")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="/css/dispositivos.css")
+        link(rel="stylesheet", href="/css/pages/ac.css") 
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
         title #{pagina}
     
     body
-        
-            
         main
             div.headerNav
                 a(href="/home")
                     div.iconBackBtn
                         i.fa-solid.fa-arrow-left
-                h2=pagina
+                div.titleCenter
+                    i.fa-solid.fa-snowflake
+                    i.fa-solid.fa-lightbulb
+                    i.fa-solid.fa-plug
+                    i.fa-solid.fa-warehouse
+                    i.fa-solid.fa-cloud-rain
+                    i.fa-solid.fa-fire-flame-curved
+                    i.fa-solid.fa-bottle-water
+                    h2=pagina
                 div.iconMenu
                     i.fa-solid.fa-bars
-
+        
             block contenido
+        block scripts

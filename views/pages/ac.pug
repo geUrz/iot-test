@@ -1,7 +1,60 @@
 extends ../layout/dispositivos
 
 block contenido
+    div.sectionAC
+        div.temp_box
+            div.sensor_temp
+                div.sensor_temp_F
+                    h3 35
+                    h3 °F
+                div.sensor_temp_C
+                    h3 18
+                    h3 °c    
+            div.barra_divide
+                h3 |
+            div.set_temp
+                div.set_temp_F
+                    h3 35
+                    h3 °F
+                div.set_temp_C
+                    h3 18
+                    h3 °c 
+        div.circle_icon_main
+            div.circle_icon_temp
+                i.fa-solid.fa-temperature-half
+            div.circle_icon_power
+                i.fa-solid.fa-power-off
+        div.toggle_main
+            div.toggle_box_main
+                div.toggle_box1_1
+                    h3.h3Frio Frio 
+                div.toggle_box2_2
+                    h3 Auto
+                    div.toggle_cool
+                        div.toggle_circle_cool
+                    h3 Manual
+            div.toggle_box_main
+                div.toggle_box1_1
+                    h3.h3Fan Fan        
+                div.toggle_box2_2
+                    h3 Auto
+                    div.toggle_fan
+                        div.toggle_circle_fan
+                    h3 On
+    
+    footer.footer_main 
+        div.footer_box 
+            div.i 
+                i.fa-solid.fa-stopwatch
+            div.h3 Horario
+        div.footer_box  
+            div.i
+                i.fa-solid.fa-temperature-high
+            div.h3 Temperatura
+        div.footer_box  
+            div.i
+                i.fa-solid.fa-bolt
+            div.h3 Energia
 
-    div.sec1
-        div.sec1_box
-           
+block scripts
+    script(src="/js/ac.js") 

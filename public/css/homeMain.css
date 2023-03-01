@@ -10,10 +10,11 @@
     src: url('../font/Roboto/Roboto-Light.ttf');
     font-style: normal;
     font-weight: normal;
-  } 
+  }  
 
 :root{
-    --gray : rgb(216, 216, 216);
+    --blue1: rgb(0, 118, 253);
+    --blue2: rgb(0, 90, 192);
 }
 
 *{
@@ -24,13 +25,13 @@
 
 h2{
     font-family: 'Roboto_H2';
-    color: rgb(42, 141, 255);
+    color: var(--blue1);
     font-weight: 500;
 
 }
 
 p{
-    color: rgb(0, 90, 192);
+    color: var(--blue2);
     font-weight: 400;
 
 }
@@ -63,8 +64,18 @@ main{
     position: fixed;
     top: 0; 
     left: 0;
-    background-color: rgb(0, 118, 253);
+    background-color: var(--blue1);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.fa-home{
+    color: azure;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.headerNav h2{
+    color: azure;
 }
