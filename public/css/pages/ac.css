@@ -20,8 +20,8 @@
  *************************************/
 
  .temp_box{
-    width: 230px;
-    height: 120px;
+    width: 250px;
+    height: 150px;
     background-color: rgb(34, 34, 34);
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
 
  .sensor_temp_F{
     color: var(--blue1);
-    font-size: 45px;
+    font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +92,7 @@
 
  .set_temp_F{
     color: var(--blue1);
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,8 +137,8 @@
  }
 
  .circle_icon_temp{
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
     background-color: rgb(34, 34, 34);
     display: flex;
     align-items: center;
@@ -158,8 +158,8 @@
  }
 
  .circle_icon_power{
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
     background-color: rgb(34, 34, 34);
     display: flex;
     align-items: center;
@@ -259,8 +259,8 @@
  }
 
  .toggle_cool{
-    width: 50px;
-    height: 20px;
+    width: 55px;
+    height: 25px;
     margin: 0 2.5px 0 2.5px;
     background-color: var(--blue2);
     border-radius: 30px 30px 30px 30px;
@@ -269,8 +269,8 @@
  }
 
  .toggle_fan{
-    width: 50px;
-    height: 20px;
+    width: 55px;
+    height: 25px;
     margin: 0 2.5px 0 2.5px;
     background-color: rgb(100, 100, 100);
     border-radius: 30px 30px 30px 30px;
@@ -287,8 +287,8 @@
  }
 
 .toggle_circle_cool, .toggle_circle_fan{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: azure;
     
@@ -342,8 +342,8 @@
  }
 
 .i{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: rgb(61, 61, 61);
     display: flex;
@@ -358,6 +358,225 @@
 
  .footer_main .h3{
     color: azure;
-    font-size: 8.5px;
+    font-size: 9px;
     margin-top: 5px;
+ }
+
+ .set_temp_main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ }
+
+ .set_temp_main_display{
+    display: flex;
+ }
+
+ .set_temp_main_in{
+    width: 230px;
+    height: 320px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .set_temp_main_in h2{
+    color: azure;
+    font-size: 14px;
+ }
+
+ .set_temp_box_control{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .set_temp_box_control > div{
+    width: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .set_temp_box_control > div > div{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ }
+
+ .set_temp_box_control div div h2{
+    color: azure;
+    font-size: 35px;
+
+ }
+
+ .set_temp_box_control div div h2:nth-child(2){
+    color: azure;
+    font-size: 18px;
+
+ }
+
+ .set_temp_box_control div div h3{
+    color: azure;
+    font-size: 18px;
+
+ }
+
+ .set_temp_box_control div div h3:nth-child(2){
+    color: azure;
+    font-size: 12px;
+
+ }
+
+ .set_temp_control div:nth-child(2){
+    margin-top: 20px;
+ }
+
+ .fa-temp-up, .fa-temp-down{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: azure;
+ }
+
+ .fa-temp-up-down-color{
+    background-color: rgb(8, 8, 8);
+ }
+
+ .fa-temperature-up, .fa-temperature-down{
+    color: var(--blue1) !important;
+    font-size: 22px !important;
+ }
+
+ .set_temp_box_btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .set_temp_btn_aceptar{
+    width: 80px;
+    height: 25px;
+    font-size: 10.5px;
+    color: azure;
+    background-color: var(--blue1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    cursor: pointer;
+ }
+
+ .set_temp_btn_aceptar:hover{
+    background-color: var(--blue2);
+ }
+
+ .set_temp_btn_cancelar{
+    width: 80px;
+    height: 25px;
+    font-size: 10.5px;
+    color: azure;
+    background-color: rgb(119, 119, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    cursor: pointer;
+ }
+
+ .set_temp_btn_cancelar:hover{
+    background-color: rgb(88, 88, 88);
+ }
+
+ .status_temp_sensor_main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ }
+
+ .status_temp_sensor_main_display{
+    display: flex;
+ }
+
+ .status_temp_sensor_box{
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .status_temp_sensor_box h2{
+    color: azure;
+    font-size: 18px;
+ }
+
+ .status_temp_sensor_btn{
+    width: 100%;
+    height: auto;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .status_temp_sensor_si{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    background-color: var(--blue1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+
+ .status_temp_sensor_si:hover{
+    background-color: var(--blue2);
+ }
+
+ .status_temp_sensor_no{
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    background-color: rgb(119, 119, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+
+ .status_temp_sensor_no:hover{
+    background-color: rgb(88, 88, 88);
+ }
+
+ .status_temp_sensor_si h3, .status_temp_sensor_no h3{
+    color: azure;
+    font-size: 14px;
  }

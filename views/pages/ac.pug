@@ -5,19 +5,19 @@ block contenido
         div.temp_box
             div.sensor_temp
                 div.sensor_temp_F
-                    h3 35
+                    h3.temp_sensor_F --
                     h3 °F
                 div.sensor_temp_C
-                    h3 18
+                    h3.temp_sensor_C --
                     h3 °c    
             div.barra_divide
                 h3 |
             div.set_temp
                 div.set_temp_F
-                    h3 35
+                    h3.set_temp_h3_F --
                     h3 °F
                 div.set_temp_C
-                    h3 18
+                    h3 --
                     h3 °c 
         div.circle_icon_main
             div.circle_icon_temp
@@ -41,20 +41,63 @@ block contenido
                     div.toggle_fan
                         div.toggle_circle_fan
                     h3 On
+
+        div.status_temp_sensor_main
+            div.status_temp_sensor_box
+                h2 ¡ El equipo esta apagado !
+                h2 ¿ Desea encenderlo ?
+
+                div.status_temp_sensor_btn
+                    div.status_temp_sensor_si
+                        h3 Si
+                    div.status_temp_sensor_no
+                        h3 No
+
     
     footer.footer_main 
-        div.footer_box 
+        div.footer_box
             div.i 
                 i.fa-solid.fa-stopwatch
             div.h3 Horario
-        div.footer_box  
+        div.footer_box.set_temp_footer 
             div.i
                 i.fa-solid.fa-temperature-high
             div.h3 Temperatura
+
+
+
+        div.set_temp_main
+            div.set_temp_main_in
+                div 
+                    h2 Establecer temperatura 
+                div.set_temp_box_control
+                    div
+                        div
+                            h2.set_temp_box_F -- 
+                            h2 °F
+                        div
+                            h3.set_temp_box_C --
+                            h3 °C
+                    div.set_temp_control
+                        div.fa-temp-up 
+                            i.fas.fa-temperature-up
+                        div.fa-temp-down 
+                            i.fas.fa-temperature-down
+                div.set_temp_box_btn
+                    div.set_temp_btn_aceptar
+                        h3 Aceptar
+                    div.set_temp_btn_cancelar
+                        h3 Cancelar
+
+
+
         div.footer_box  
             div.i
                 i.fa-solid.fa-bolt
             div.h3 Energia
 
 block scripts
-    script(src="/js/ac.js") 
+    script(src="/js/mqttApi.js")
+    script(src="/js/mqtt.js")
+    script(src="/js/ac.js")
+     
